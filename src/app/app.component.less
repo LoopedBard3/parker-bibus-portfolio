@@ -1,0 +1,89 @@
+@theme-color: rgb(190, 190, 190);
+@theme-text-color: rgb(78, 78, 78);
+.app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: auto;
+        width: 100%;
+        flex-basis: 6rem;
+        background-color: @theme-color;
+        .headTitle {
+            color: @theme-text-color;
+            text-align: center;
+            margin: 0;
+            padding: .4rem;
+        }
+        .headNavBar {
+            align-self: center;
+            background-color: white;
+            width: 60%;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        .sidebar {
+            flex-grow: 3;
+            min-height: 100%;
+            background-color: @theme-color;
+        }
+        .sidebarLeft {
+            background-image: linear-gradient(to left, lighten(@theme-color, 100%), @theme-color);
+        }
+        .sidebarRight {
+            background-image: linear-gradient(to right, lighten(@theme-color, 100%), @theme-color);
+        }
+        .router-outlet {
+            flex-grow: 1;
+            flex-basis: 50%;
+        }
+    }
+    .footer {
+        justify-self: flex-end;
+        background-color: @theme-color;
+        background-image: linear-gradient(to bottom, darken(@theme-color, 10%), @theme-color);
+        color: @theme-text-color;
+        flex-basis: 15%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+        a {
+            color: @theme-text-color;
+        }
+    }
+    .btn-cust {
+        text-align: center;
+        display: inline-block;
+        font-size: 1rem;
+    }
+    .btn-cust-primary {
+        width: 100%;
+        font-size: 1.3rem;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: @theme-color;
+        background-image: linear-gradient(lighten(@theme-color, 20%), @theme-color);
+        color: darken(@theme-text-color, 40%);
+        border-color: darken(@theme-color, 10%);
+        opacity: 0.7;
+        transition: 0.3s;
+        &:hover {
+            color: @theme-text-color;
+            opacity: 1.0;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<div class="app">
+  <div class="header">
+    <h1 class="headTitle">Parker Bibus's Portfolio Website</h1>
+    <div class="headNavBar">
+      <button type="button" class="btn-cust btn-cust-primary" routerLink="/home">Homepage</button>
+      <button type="menu" class="btn-cust btn-cust-primary" routerLink="/projects">Projects</button>
+      <button type="button" class="btn-cust btn-cust-primary" routerLink="/about">About Me</button>
+      <button type="button" class="btn-cust btn-cust-primary" routerLink="/contact">Contact Me</button>
+    </div>
+  </div>
+  <div class="main">
+    <div class="sidebar sidebarLeft"></div>
+    <div class="router-outlet">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="sidebar sidebarRight"></div>
+  </div>
+  <div class="footer">
+    <p style="margin: 0; margin-top: .5rem;">Website created by Parker Bibus, Copyright 2018. Last Revised: September
+      22nd, 2018. </p>
+    <p><a routerLink="/contact">Contact Me</a> &nbsp; <a href="https://github.com/LoopedBard3" target="_blank">Github</a>
+      &nbsp; <a href="https://www.linkedin.com/in/parker-bibus/" target="_blank">LinkedIn</a> &nbsp; <a href="https://www.youtube.com/user/awsomepeer"
+        target="_blank">Youtube</a></p>
+  </div>
+</div>
