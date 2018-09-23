@@ -15,8 +15,6 @@ export class HomepageComponent implements OnInit {
     { 'imagePath': 'assets/images/homeSlideshow/20150806_153920.jpg', 'imageTitle': 'asd', 'imageText': 'Here is some more test text.'},
   ];
 
-  constructor(private logger: AppInsightsService) {
-    this.logger.logEvent('homepage visited');
-  }
+  constructor() {  }
   ngOnInit() { }
 }

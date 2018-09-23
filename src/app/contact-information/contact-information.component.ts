@@ -8,9 +8,7 @@ import { AppInsightsService } from 'microsoft-applicationinsights-angular5';
 })
 export class ContactInformationComponent implements OnInit {
 
-  constructor(private logger: AppInsightsService) {
-    this.logger.logEvent('contact visited');
-   }
+  constructor() { }
 
   ngOnInit() {
   }
