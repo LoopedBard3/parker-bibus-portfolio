@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppInsightsModule } from 'microsoft-applicationinsights-angular5';
 
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -16,6 +17,7 @@ import { SlideshowComponent } from './modules/slideshow/slideshow.component';
     AppRoutingModule,
     ButtonsModule.forRoot(),
     CarouselModule.forRoot(),
+    AppInsightsModule.forRoot('c0ee0dc6-88b6-4ed3-8b3c-5d0fc2953433'),
   ],
   declarations: [
     AppComponent,

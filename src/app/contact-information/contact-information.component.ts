@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppInsightsService } from 'microsoft-applicationinsights-angular5';
 
 @Component({
   selector: 'app-contact-information',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactInformationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private logger: AppInsightsService) {
+    this.logger.logEvent('contact visited');
+   }
 
   ngOnInit() {
   }
