@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  appInsights: {
+    instrumentationKey: 'c0ee0dc6-88b6-4ed3-8b3c-5d0fc2953433'
+}
 };
 
 /*

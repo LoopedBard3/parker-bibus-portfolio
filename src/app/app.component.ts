@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ReflectiveInjector } from '@angular/core';
+import { MyMonitoringService } from './MyMonitoringService';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'parker-bibus-portfolio';
+  constructor(private myMonitoringService: MyMonitoringService) {
+    const injector = ReflectiveInjector.resolveAndCreate([MyMonitoringService]);
+    this.myMonitoringService = injector.get(MyMonitoringService);
+    this.myMonitoringService.logPageView();
+    console.log("Page View");
+  }
 }
