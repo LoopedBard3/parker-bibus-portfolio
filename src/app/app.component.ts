@@ -12,6 +12,5 @@ export class AppComponent {
     const injector = ReflectiveInjector.resolveAndCreate([MyMonitoringService]);
     this.myMonitoringService = injector.get(MyMonitoringService);
     this.myMonitoringService.logPageView();
-    console.log("Page View");
   }
 }
