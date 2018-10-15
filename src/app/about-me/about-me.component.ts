@@ -7,15 +7,15 @@ import { imageWithText } from '../models/imageWithText.model';
   styleUrls: ['./about-me.component.less']
 })
 export class AboutMeComponent implements OnInit {
-
   slides: imageWithText[] = [
-    { 'imagePath': 'assets/images/homeSlideshow/20150806_124428.jpg', 'imageTitle': 'asd', 'imageText': 'Here is some test text.'},
-    { 'imagePath': 'assets/images/homeSlideshow/20150806_153920.jpg', 'imageTitle': 'asd', 'imageText': 'Here is some more test text.'},
+    {
+      imagePath: 'assets/images/homeSlideshow/20160901-parker.jpg',
+      imageTitle: '',
+      imageText: 'Picture of myself.',
+    }
   ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

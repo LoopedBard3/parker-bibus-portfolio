@@ -5,6 +5,7 @@ import { CarouselConfig } from 'ngx-bootstrap';
 @Component({
   selector: 'app-slideshow',
   templateUrl: './slideshow.component.html',
+  styleUrls: ['./slideshow.component.less'],
   providers: [
     { provide: CarouselConfig, useValue: { interval: 3300, noPause: false, showIndicators: true, noWrap: false } }
   ]

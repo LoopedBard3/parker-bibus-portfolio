@@ -1,11 +1,11 @@
 <carousel>
   <div *ngFor="let item of imageInfo">
     <slide>
-      <img src="{{item.imagePath}}" alt="{{item.imageTitle}}" routerLink="{{item.associatedPage}}" style="display: block; width: 100%;">
+      <img src="{{item.imagePath}}" alt="{{item.imageTitle}}" routerLink="{{item.associatedPage}}" style="display: block;">
       <div class="carousel-caption d-none d-md-block">
-          <h3>{{item.imageTitle}}</h3>
-          <p>{{item.imageText}}</p>
-        </div>
+        <h3>{{item.imageTitle}}</h3>
+        <p>{{item.imageText}}</p>
+      </div>
     </slide>
   </div>
 </carousel>
