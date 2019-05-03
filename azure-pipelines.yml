@@ -29,13 +29,13 @@ steps:
 
 - task: PublishPipelineArtifact@0
   inputs:
-    artifactName: 'angular'
+    artifactName: 'angular/parkerbibusportfolio'
     targetPath: 'dist'
 
 
 - task: AzureFileCopy@3
   inputs:
-    SourcePath: 'dist/angular/parkerbibusportfolio'
+    SourcePath: 'dist'
     ConnectedServiceNameARM: 'Pay-As-You-Go(27004a44-c36f-4c1e-a0c2-ff39eba21f1b)'
     Destination: 'AzureBlob'
     StorageAccountRM: 'parkerbibusportfolio'
