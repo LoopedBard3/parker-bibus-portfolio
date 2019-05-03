@@ -31,3 +31,13 @@ steps:
   inputs:
     artifactName: 'angular'
     targetPath: 'dist'
+
+
+- task: AzureFileCopy@3
+  inputs:
+    SourcePath: 'dist'
+    ConnectedServiceNameARM: 'Pay-As-You-Go(27004a44-c36f-4c1e-a0c2-ff39eba21f1b)'
+    Destination: 'AzureBlob'
+    StorageAccountRM: 'parkerbibusportfolio'
+    ContainerName: '$web'
+    cleanTargetBeforeCopy: true
