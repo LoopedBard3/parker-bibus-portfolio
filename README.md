@@ -1,3 +1,5 @@
+[![Build Status](https://beebistudios.visualstudio.com/Personal%20Website/_apis/build/status/LoopedBard3.parker-bibus-portfolio?branchName=master)](https://beebistudios.visualstudio.com/Personal%20Website/_build/latest?definitionId=2&branchName=master)
+
 # My Portfolio
 ## What is this?
 ### This is a website I am creating to act as a portfolio. It will contain information about me and the projects I have worked on. It will also be a living portfolio that will get updated as I continue to gain more experience.
