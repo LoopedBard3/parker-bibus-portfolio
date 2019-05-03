@@ -27,10 +27,10 @@ steps:
     customCommand: run build -- --prod
     workingDir: ""
 
-# - task: PublishPipelineArtifact@0
-#   inputs:
-#     artifactName: 'angular/parkerbibusportfolio'
-#     targetPath: 'dist'
+- task: PublishPipelineArtifact@0
+  inputs:
+    artifactName: 'angular/parkerbibusportfolio'
+    targetPath: 'dist'
 
 
 - task: AzureFileCopy@3
