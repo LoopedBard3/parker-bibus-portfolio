@@ -24,7 +24,7 @@ steps:
   displayName: 'Build Angular'
   inputs:
     command: custom
-    customCommand: run build -- --prod --outputHashing=none
+    customCommand: run build -- --prod
     workingDir: ""
 
 - task: PublishPipelineArtifact@0
@@ -40,4 +40,3 @@ steps:
     Destination: 'AzureBlob'
     StorageAccountRM: 'parkerbibusportfolio'
     ContainerName: '$web'
-    cleanTargetBeforeCopy: true
