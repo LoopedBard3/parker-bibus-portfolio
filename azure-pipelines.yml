@@ -27,6 +27,12 @@ steps:
     customCommand: run build -- --prod
     workingDir: ""
 
+- task: AzureCLI@1
+  inputs:
+    connectedServiceNameARM: 'Pay-As-You-Go(27004a44-c36f-4c1e-a0c2-ff39eba21f1b)'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az storage blob delete-batch --account-name parkerbibusportfolio --source $web'
+
 - task: PublishPipelineArtifact@0
   inputs:
     artifactName: 'angular/parkerbibusportfolio'
