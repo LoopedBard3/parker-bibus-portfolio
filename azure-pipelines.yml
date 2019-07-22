@@ -29,7 +29,7 @@ steps:
 
 - task: AzureCLI@1
   inputs:
-    connectedServiceNameARM: 'Pay-As-You-Go(27004a44-c36f-4c1e-a0c2-ff39eba21f1b)'
+    connectedServiceNameARM: 'Visual Studio Enterprise(6bba67a2-8699-485b-852b-41f1de66d12c)'
     scriptLocation: 'inlineScript'
     inlineScript: 'az storage blob delete-batch --account-name parkerbibusportfolio --source $web'
 
@@ -42,7 +42,7 @@ steps:
 - task: AzureFileCopy@3
   inputs:
     SourcePath: 'dist/parker-bibus-portfolio'
-    ConnectedServiceNameARM: 'Pay-As-You-Go(27004a44-c36f-4c1e-a0c2-ff39eba21f1b)'
+    ConnectedServiceNameARM: 'Visual Studio Enterprise(6bba67a2-8699-485b-852b-41f1de66d12c)'
     Destination: 'AzureBlob'
     StorageAccountRM: 'parkerbibusportfolio'
     ContainerName: '$web'
