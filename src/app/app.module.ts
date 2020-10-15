@@ -12,6 +12,8 @@ import { ButtonsModule, CarouselModule } from 'ngx-bootstrap';
 import { SlideshowComponent } from './modules/slideshow/slideshow.component';
 import { MyMonitoringService } from './MyMonitoringService';
 import { BaseComponent } from './monitor.base.component';
+import { EssaysComponent } from './essays/essays.component';
+import { SeniorProjectComponent } from './senior-project/senior-project.component';
 
 @NgModule({
   imports: [
@@ -28,6 +30,8 @@ import { BaseComponent } from './monitor.base.component';
     ContactInformationComponent,
     SlideshowComponent,
     BaseComponent,
+    EssaysComponent,
+    SeniorProjectComponent,
   ],
   providers: [MyMonitoringService],
   bootstrap: [AppComponent]

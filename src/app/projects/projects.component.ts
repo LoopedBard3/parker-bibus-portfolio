@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { imageWithText } from '../models/imageWithText.model';
 
 @Component({
   selector: 'app-projects',
@@ -7,10 +6,6 @@ import { imageWithText } from '../models/imageWithText.model';
   styleUrls: ['./projects.component.less']
 })
 export class ProjectsComponent implements OnInit {
-
-  FPGASlides: imageWithText[] = [
-  ];
-
 
   constructor() { }
 

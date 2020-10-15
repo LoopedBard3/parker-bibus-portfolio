@@ -4,6 +4,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ContactInformationComponent } from './contact-information/contact-information.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { EssaysComponent } from './essays/essays.component';
+import { SeniorProjectComponent } from './senior-project/senior-project.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -11,6 +13,8 @@ const routes: Routes = [
   { path: 'about', component: AboutMeComponent, data: { state: 'about' } },
   { path: 'contact', component: ContactInformationComponent, data: { state: 'contact'}},
   { path: 'projects', component: ProjectsComponent, data: { state: 'projects'}},
+  { path: 'essays', component: EssaysComponent, data: { state: 'essays'}},
+  { path: 'senior', component: SeniorProjectComponent, data: { state: 'senior'}},
   { path: '**', redirectTo: '' }
 ];
 
